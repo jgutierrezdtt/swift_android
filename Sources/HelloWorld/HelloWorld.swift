@@ -1,6 +1,13 @@
 // Swift Cross-Platform Hello World
 // Demonstrates shared Swift code that runs on any platform
 
+// String multiplication extension for prettier output
+extension String {
+    static func *(lhs: String, rhs: Int) -> String {
+        return String(repeating: lhs, count: rhs)
+    }
+}
+
 @main
 struct HelloWorld {
     static func main() {
@@ -44,12 +51,5 @@ struct HelloWorld {
         #else
         return "< 5.9"
         #endif
-    }
-}
-
-// String multiplication extension for prettier output
-extension String {
-    static func *(lhs: String, rhs: Int) -> String {
-        return String(repeating: lhs, count: rhs)
     }
 }
