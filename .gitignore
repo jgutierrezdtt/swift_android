@@ -1,0 +1,33 @@
+.DS_Store
+/.build
+/Packages
+xcuserdata/
+DerivedData/
+.swiftpm/configuration/registries.json
+.swiftpm/xcode/package.xcworkspace/contents.xcworkspacedata
+.netrc
+
+# iOS specific
+*.xcodeproj
+*.xcworkspace
+*.ipa
+*.dSYM.zip
+*.dSYM
+
+# Android specific
+*.apk
+*.aab
+*.dex
+*.class
+Android/app/build/
+Android/.gradle/
+Android/local.properties
+Android/.idea/
+Android/gradle/
+
+# Build artifacts
+build/
+dist/
+*.o
+*.so
+*.dylib
